@@ -1,15 +1,19 @@
 import React from 'react';
 import LoginPage from './components/LoginPage'
 import "./App.css"
-import SignUp from './components/SignUp';
-import Temp from "./components/temp"
+import LaptopViewSignUp from './components/LaptopViewSignUp';
+import MobileViewSignUp from "./components/MobileViewSignUp";
+import ProfileCreation from "./components/ProfileCreation";
+import PetProfile from './components/PetProfile';
 
 function App() {
   return (
    <div className='w-full h-full'>
+   {/* <ProfileCreation /> */}
    {/* <LoginPage /> */}
-   {/* <SignUp /> */}
-   <Temp />
+   {/* <LaptopViewSignUp /> */}
+   {/* <MobileViewSignUp /> */}
+   <PetProfile />
    </div>
   );
 }

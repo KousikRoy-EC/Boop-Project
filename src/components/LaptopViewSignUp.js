@@ -4,7 +4,7 @@ import Video from "../assets/Video.mp4";
 import { Checkbox } from "@mui/material";
 import checkImg from "../assets/checkImg.png";
 
-const SignUp = () => {
+const LaptopViewSignUp = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -254,4 +254,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default LaptopViewSignUp;

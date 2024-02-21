@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import nameIcon from "../assets/nameIcon.png";
 import Video from "../assets/Video.mp4";
 import { Checkbox } from "@mui/material";
-import checkImg from "../assets/checkImg.png";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { ChevronLeft } from "@mui/icons-material";
 import stopwatch from "../assets/stopwatch.png";
+import ProfileCreation from "./ProfileCreation";
 
-const SignUp = () => {
+const MobileViewSignUp = () => {
   const [step, setStep] = useState(1); // To keep track of sign-up steps
 
   const [formData, setFormData] = useState({
@@ -93,19 +93,71 @@ const SignUp = () => {
         </video>
       </div>
 
-      <div className=" w-full m-4 py-12 px-4 rounded-3xl border-2 border-borderColor backdrop-blur-2xl relative z-10">
+      {/* <div className=" w-full m-4 py-12 px-4 rounded-3xl border-2 border-borderColor backdrop-blur-2xl relative z-10">
         <div className="justify-center flex">
           <img src={nameIcon} className="w-48 h-28" alt="Name Icon" />
         </div>
-        {/* Signup page */}
+      
         <div className="flex flex-col gap-4">
           <div className="text-center">
             <p className="text-gray-800 font-poppins text-4xl font-medium leading-8 tracking-wide">
               Create your account
             </p>
-            <p className="text-black font-poppins text-xl font-normal leading-8 tracking-tight">
-              Manage your pet service with us
-            </p>
+            {step === 1 && (
+              <span className="flex justify-center items-center flex-col gap-1">
+                {" "}
+                <p className="text-black font-poppins text-xl font-normal leading-8 tracking-tight">
+                  Step 1 : Enter your name and email
+                </p>
+                <svg
+                  width="43"
+                  height="6"
+                  viewBox="0 0 43 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="13" height="6" rx="3" fill="white" />
+                  <circle cx="25" cy="3" r="3" fill="#9E9E9E" />
+                  <circle cx="40" cy="3" r="3" fill="#9E9E9E" />
+                </svg>
+              </span>
+            )}
+            {step === 2 && (
+              <span className="flex justify-center items-center flex-col gap-1">
+                <p className="text-black font-poppins text-xl font-normal leading-8 tracking-tight">
+                  Step 2 : Enter your Address and details
+                </p>
+                <svg
+                  width="43"
+                  height="6"
+                  viewBox="0 0 43 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="3" cy="3" r="3" fill="#9E9E9E" />
+                  <rect x="15" width="13" height="6" rx="3" fill="white" />
+                  <circle cx="40" cy="3" r="3" fill="#9E9E9E" />
+                </svg>
+              </span>
+            )}
+            {step === 3 && (
+              <span className="flex justify-center items-center flex-col gap-1">
+                <p className="text-black font-poppins text-xl font-normal leading-8 tracking-tight">
+                  Step 3 : Verification
+                </p>
+                <svg
+                  width="43"
+                  height="6"
+                  viewBox="0 0 43 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="3" cy="3" r="3" fill="#9E9E9E" />
+                  <circle cx="18" cy="3" r="3" fill="#9E9E9E" />
+                  <rect x="30" width="13" height="6" rx="3" fill="white" />
+                </svg>
+              </span>
+            )}
           </div>
 
           {step === 1 && (
@@ -239,19 +291,19 @@ const SignUp = () => {
                 placeholder="Email"
               />
               <div className="flex justify-between">
-              <div className="pr-2 flex border border-borderColor rounded-xl w-fit items-center gap-1 focus:outline-none">
-                <input
-                  onChange={handleChange}
-                  name="otp"
-                  value={formData.otp}
-                  type="text"
-                  className=" w-[83px] h-[38px] border border-borderColor rounded-xl bg-white  px-4 text-lg focus:outline-none"
-                  placeholder="OTP"
-                />
+                <div className="pr-2 flex border border-borderColor rounded-xl w-fit items-center gap-1 focus:outline-none">
+                  <input
+                    onChange={handleChange}
+                    name="otp"
+                    value={formData.otp}
+                    type="text"
+                    className=" w-[83px] h-[38px] border border-borderColor rounded-xl bg-white  px-4 text-lg focus:outline-none"
+                    placeholder="OTP"
+                  />
 
-                <p>Resend OTP ?</p>
-              </div>
-              <div className="relative w-[58px] h-[58px]">
+                  <p>Resend OTP ?</p>
+                </div>
+                <div className="relative w-[58px] h-[58px]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50"
@@ -269,7 +321,7 @@ const SignUp = () => {
                     className="w-[50px] h-[50px] top-5 absolute"
                   />
                 </div>
-                </div>
+              </div>
 
               <div className="flex items-center h-[15px] gap-2">
                 <Checkbox
@@ -325,15 +377,20 @@ const SignUp = () => {
             </div>
           )}
 
-          {/* Already a user */}
+      
           <p className="text-center text-gray-900 font-poppins text-xl font-medium leading-6 tracking-wide">
             Already a user?{" "}
             <span className="font-medium underline">Sign in</span>
           </p>
         </div>
-      </div>
+     </div> */}
+
+
+      {/* <div className="w-11/12 sm:w-6/12 m-4 sm:py-12 py-4 px-4 rounded-3xl border-2 border-borderColor backdrop-blur-2xl relative z-10">
+      <ProfileCreation />
+      </div> */}
     </div>
   );
 };
 
-export default SignUp;
+export default MobileViewSignUp;
