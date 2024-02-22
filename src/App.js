@@ -5,6 +5,7 @@ import LaptopViewSignUp from './components/LaptopViewSignUp';
 import MobileViewSignUp from "./components/MobileViewSignUp";
 import ProfileCreation from "./components/ProfileCreation";
 import PetProfile from './components/PetProfile';
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
    {/* <LoginPage /> */}
    {/* <LaptopViewSignUp /> */}
    {/* <MobileViewSignUp /> */}
-   <PetProfile />
+   {/* <PetProfile /> */}
+<LandingPage />
+
    </div>
   );
 }
