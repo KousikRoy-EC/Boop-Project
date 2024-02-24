@@ -9,7 +9,7 @@ import LandingPage from './components/LandingPage';
 
 function App() {
   return (
-   <div className='w-full h-full'>
+   <div className='w-full h-full '>
    {/* <ProfileCreation /> */}
    {/* <LoginPage /> */}
    {/* <LaptopViewSignUp /> */}

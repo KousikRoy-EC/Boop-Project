@@ -5,3 +5,7 @@
 .MuiOutlinedInput-notchedOutline {
     border: none ! important ;
   }
+
+ body{
+  height: auto;
+ }

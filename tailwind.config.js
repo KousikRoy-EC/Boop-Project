@@ -8,6 +8,8 @@ module.exports = {
       colors:{
         borderColor: '#DA9145',
         btnColor:'#FFB163',
+        cardTextColor: '#6B6B6B',
+        cardBg:'#F7EFE4',
       }
     },
   },
