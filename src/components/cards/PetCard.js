@@ -1,12 +1,10 @@
 import React from "react";
 import { Box, Card, CardMedia, Typography, IconButton } from "@mui/material";
-import { Close, Diversity1Sharp, Twitter } from "@mui/icons-material";
-import { Facebook, Instagram } from "lucide-react";
+import { Twitter } from "@mui/icons-material";
 import { styled } from "@mui/system";
 import PetImg from "../../assets/PetImg.jpg";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from "@mui/icons-material/X";
 
 const CustomIconButton = styled(IconButton)({
   backgroundColor: "rgba(255, 255, 255, 0.7)",

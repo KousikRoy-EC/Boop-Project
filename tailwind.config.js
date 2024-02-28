@@ -11,6 +11,7 @@ module.exports = {
         cardTextColor: '#6B6B6B',
         cardBg:'#F7EFE4',
         BlogCardBg: '#f7f6f3',
+        textGrey:'#848484',
       },
       fontFamily: {
         'poppins': ['Poppins'],

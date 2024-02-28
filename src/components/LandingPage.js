@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Video from "../assets/Video.mp4";
 import Video2 from "../assets/Video2.mp4";
@@ -10,6 +10,16 @@ import BlogCard from "./cards/BlogCard";
 import TestimonialCard from "./cards/TestimonialCard";
 
 const LandingPage = () => {
+  const [isPaused, setIsPaused] = useState(false);
+
+  const pauseScroll = () => {
+    setIsPaused(true);
+  };
+
+  const resumeScroll = () => {
+    setIsPaused(false);
+  };
+
   return (
     <>
       <Header />
@@ -132,21 +142,26 @@ const LandingPage = () => {
         </div>
       </div>
 
-
       <div className="w-full bg-cardBg py-40 overflow-hidden">
         <div className="text-7xl font-semibold px-20">Paw-some Stories</div>
         <div className="text-lg font-light px-20">
           Lorem ipsum dolor sit amet, consectetur
         </div>
         <div class="h-1 w-1/12 mx-20 bg-borderColor mt-1"></div>{" "}
-        <div className="w-full mt-10 bg-cardBg  overflow-y-auto flex px-0  hide-scroll-bar ">
-          {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-            <TestimonialCard key={i} />
-          ))}
+        <div className="w-full mt-10 bg-cardBg overflow-hidden flex px-0 hide-scroll-bar">
+          <div
+            className="testimonial-container"
+            onMouseEnter={pauseScroll}
+            onMouseLeave={resumeScroll}
+            id="testimonial-container"
+            style={{ animationPlayState: isPaused ? "paused" : "running" }}
+          >
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+              <TestimonialCard key={i} />
+            ))}
+          </div>
         </div>
       </div>
-
-
     </>
   );
 };
