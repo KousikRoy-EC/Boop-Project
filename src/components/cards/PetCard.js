@@ -17,8 +17,8 @@ const CustomIconButton = styled(IconButton)({
 export default function UserProfileCard() {
   return (
     <Card
+    className="min-w-[350px] xl:min-w-[415px]"
       sx={{
-        minWidth: 415,
         height: 350,
         position: "relative",
         borderRadius: 6,
@@ -45,7 +45,7 @@ export default function UserProfileCard() {
         <div className="flex justify-between p-2 items-center">
           <div className="flex flex-col gap-2">
             <div
-              className="text-white font-poppins leading-12 tracking-wide text-5xl font-semibold"
+              className="text-white font-poppins leading-12 tracking-wide xl:text-5xl text-2xl font-semibold"
               variant="h5"
               component="div"
             >

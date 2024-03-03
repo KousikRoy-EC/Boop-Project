@@ -7,7 +7,7 @@ const Card = ({ title, video, description, imagePosition }) => {
         <div className="flex justify-evenly items-center gap-[10px]">
           {imagePosition === "left" && (
             <div className="w-5/12">
-              <div className="text-7xl w-[400px] font-semibold my-6">
+              <div className=" text-4xl xl:text-7xl  xl:w-[400px] font-semibold my-6">
                 {title}
               </div>
               <div class="h-1 w-2/5  bg-borderColor"></div>
@@ -33,7 +33,7 @@ const Card = ({ title, video, description, imagePosition }) => {
 
           {imagePosition === "right" && (
             <div className="w-5/12">
-              <div className="text-7xl w-[400px] font-semibold my-6">
+              <div className="text-4xl xl:text-7xl   xl:w-[400px] font-semibold my-6">
                 {title}
               </div>
               <div class="h-1 w-2/5  bg-borderColor"></div>

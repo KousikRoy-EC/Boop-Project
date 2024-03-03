@@ -5,10 +5,10 @@ import RemoveIcon from "@mui/icons-material/Remove";
 const ExpandableCrad = (props) => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="collapsible-card w-10/12 bg-white">
+    <div className="collapsible-card w-12/12 my-8 mx-0 xl:mx-8 bg-white">
       <div
         id="header"
-        class="header relative cursor-pointer flex justify-start items-center my-2 text-black font-poppins text-3xl font-semibold leading-10 tracking-wider"
+        class="header relative cursor-pointer flex justify-start gap-2 items-center my-10 xl:my-2 text-black font-poppins text-3xl font-semibold leading-10 tracking-wider"
         onClick={() => {
           setToggle((prev) => {
             return !prev;

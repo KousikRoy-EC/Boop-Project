@@ -5,7 +5,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 const BlogCard = () => {
   return (
     <>
-      <div className="max-w-[345px] rounded-xl bg-BlogCardBg overflow-hidden border-none shadow-BlogCardShadow ">
+      <div className="xl:max-w-[345px] rounded-xl bg-BlogCardBg overflow-hidden border-none shadow-BlogCardShadow  transition-transform duration-300 transform hover:scale-105 ">
         <img className="w-full shadow-BlogImgShandow h-auto rounded-xl " src={BlogImg} alt="#img" />
         <div className="p-4">
           <div className="bg-borderColor font-poppins mb-2 font-medium text-base rounded-3xl inline-block text-white px-4 py-1">
