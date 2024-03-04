@@ -1,9 +1,9 @@
 import React from "react";
-import nameIcon from "../assets/nameIcon.png";
-import google from "../assets/google.png";
-import facebook from "../assets/facebook.png";
-import apple from "../assets/apple.png";
-import Video from "../assets/Video.mp4"
+import nameIcon from "../../assets/nameIcon.png";
+import google from "../../assets/google.png";
+import facebook from "../../assets/facebook.png";
+import apple from "../../assets/apple.png";
+import Video from "../../assets/Video.mp4"
 
 const LoginPage = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import { Twitter } from "@mui/icons-material";
-import nameIcon from "../assets/nameIcon.png";
+import nameIcon from "../../assets/nameIcon.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 export default function App() {

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import nameIcon from "../assets/nameIcon.png";
-import Video from "../assets/Video.mp4";
+import nameIcon from "../../assets/nameIcon.png";
+import Video from "../../assets/Video.mp4";
 import { Checkbox } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { ChevronLeft } from "@mui/icons-material";
-import stopwatch from "../assets/stopwatch.png";
-import ProfileCreation from "./ProfileCreation";
+import stopwatch from "../../assets/stopwatch.png";
+import ProfileCreation from "../../components/ProfileCreation";
 
 const MobileViewSignUp = () => {
   const [step, setStep] = useState(1); // To keep track of sign-up steps

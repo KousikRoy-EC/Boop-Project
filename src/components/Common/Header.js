@@ -1,5 +1,5 @@
 import React from "react";
-import nameIcon from "../assets/nameIcon.png";
+import nameIcon from "../../assets/nameIcon.png";
 import { KeyboardArrowDown } from "@mui/icons-material";
 
 const Header = () => {

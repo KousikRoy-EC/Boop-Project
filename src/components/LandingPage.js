@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Header from "./Header";
+import Header from "./Common/Header";
 import Video from "../assets/Video.mp4";
 import Video2 from "../assets/Video2.mp4";
-import Card from "./Card";
+import Card from "./cards/Card";
 import { Data, ExpandableData } from "../config/CardData";
-import ExpandableCrad from "./ExpandableCrad";
+import ExpandableCrad from "./cards/ExpandableCrad";
 import PetCard from "./cards/PetCard";
 import BlogCard from "./cards/BlogCard";
 import TestimonialCard from "./cards/TestimonialCard";
-import Footer from "./Footer";
+import Footer from "./Common/Footer";
 
 const LandingPage = () => {
   const [isPaused, setIsPaused] = useState(false);

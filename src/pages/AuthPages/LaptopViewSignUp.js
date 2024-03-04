@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import nameIcon from "../assets/nameIcon.png";
-import Video from "../assets/Video.mp4";
+import nameIcon from "../../assets/nameIcon.png";
+import Video from "../../assets/Video.mp4";
 import { Checkbox } from "@mui/material";
-import checkImg from "../assets/checkImg.png";
+import checkImg from "../../assets/checkImg.png";
 
 const LaptopViewSignUp = () => {
   const [formData, setFormData] = useState({

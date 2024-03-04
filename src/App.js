@@ -1,8 +1,8 @@
 import React from 'react';
-import LoginPage from './components/LoginPage'
+import LoginPage from './pages/AuthPages/LoginPage'
 import "./App.css"
-import LaptopViewSignUp from './components/LaptopViewSignUp';
-import MobileViewSignUp from "./components/MobileViewSignUp";
+import LaptopViewSignUp from './pages/AuthPages/LaptopViewSignUp'
+import MobileViewSignUp from './pages/AuthPages/MobileViewSignUp'
 import ProfileCreation from "./components/ProfileCreation";
 import PetProfile from './components/PetProfile';
 import LandingPage from './components/LandingPage';
@@ -16,7 +16,6 @@ function App() {
    {/* <MobileViewSignUp /> */}
    {/* <PetProfile /> */}
 <LandingPage />
-
    </div>
   );
 }
